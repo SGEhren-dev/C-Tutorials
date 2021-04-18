@@ -1,0 +1,2 @@
+M:\C++ Videos\C-Tutorials\4-Functions\x64\Debug\4-Functions.exe
+M:\C++ Videos\C-Tutorials\4-Functions\x64\Debug\4-Functions.pdb
