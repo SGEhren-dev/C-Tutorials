@@ -1,0 +1,42 @@
+-- Types and Variables --
+
+C++ offers many built in data types (or types) that the programmer can use. Below are some of those data types:
+- char					-127 to 127 or 0 to 255
+- unsigned char			0 to 255
+- signed char			-127 to 127
+- int					-2147483648 to 2147483647
+- unsigned int			0 to 4294967295
+- signed int			-2147483648 to 2147483647
+- short 				-32768 to 32767
+- unsigned short		0 to 65,535
+- signed short			-32768 to 32767
+- long					-2,147,483,648 to 2,147,483,647
+- unsigned long			0 to 4,294,967,295
+- signed long			-2,147,483,648 to 2,147,483,647
+- long long				-(2^63) to (2^63)-1
+- unsigned long long	0 to 18,446,744,073,709,551,615
+- float
+- double
+- long double
+- wchar_t				1 wide character
+
+in c++ you can use a keyword called typedef.. This keyword can be used to create new types.
+
+It follows this format: typedef data-type name;
+Example: typedef int yards;
+
+yards a = 10;
+
+Another useful thing in c++ is a variable. Variables are used all the time and you need to know how to declare and initialize them to be
+successful in c++.
+
+double height; 				//This is a variable named height, with type double
+
+You can declare multiple variables on the same line as well:
+
+double height, double width;		//This is wrong, you will get a compiler error
+
+double height, widht;				//This is correct
+
+double height; double width;		//Correct but you should never do this as it looks clunky and is hard to read
+

@@ -1,0 +1,70 @@
+-- Functions --
+
+In this video we covered Functions. Functions are great ways to split up confusing code and de-clutter your programs. Functions
+are extremely useful and will be used a ton throughout your coding journey. 
+
+Don't get the functions confused with Methods. Methods are basically functions under a class (which we will get to later) and work the exact same way.
+
+There are two parts to a function - a header and a body.
+
+int main(int argc, char** argv)		<-- This is the function header
+{
+									<-- This is the function body
+}
+
+The function header consists of a data-type, a function name, and parameters if needed. The function body is where
+your code block goes. If your function returns anything other than void, you must have a 'return' keyword.
+
+It is with good practice to use function prototypes all the time. These either go at the top of your source file or in a header
+file (will explain these later). As we talked about in the video, if you want to use a function that is defined after the function you're calling
+it from, then you will get an error at compile time. 
+
+If this is confusing, here is an example on what that is talking about:
+
+int main(int argc, char** argv) {
+	someFunc("This is some func");				<-- This cannot be called since the function definition is below the current calling function.
+}
+
+void someFunc(std::string str) {
+	std::cout << str << std::endl;
+}
+
+This is an example of how it should look:
+
+void someFunc(std::string);
+
+int main(int argc, char** argv) {
+	someFunc("This is some func");				<-- Since we have a prototype of someFunc(), we can call it here as the definition is linked on the 
+}														first pass of the compiler
+
+void someFunc(std::string str) {
+	std::cout << str << std::endl;
+}
+
+As far as paramaters go, you can have any type in the () of the function header as long as it follows this convention:
+
+(type varname, type varname, type varname.....)         <-- This is just an example of using multiple parameters
+
+In some languages it is possible to use things called 'nested functions'. This is not possible in c++. An example:
+
+int main() {
+	int func() {
+		std::cout << "Func" << std::endl;
+	}
+
+	func();
+	
+	return 0;
+}
+
+This is not allowed in C++ and would look like this:
+
+int func() {
+	std::cout << "Func" << std::endl;
+}
+
+int main() {
+	func();
+
+	return 0;
+}

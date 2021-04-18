@@ -1,0 +1,89 @@
+-- Statements and Loops --
+
+In c++ if, if else, and else statements will come in very handy. These are used 100% of the time
+for program logic. You must know how these work and how they are formatted to be able to use
+them efficiently.
+
+If statements need a condition in their header for them to be syntaxually correct.
+
+An example of an incorrect if statement is:
+
+if(int x = 0)
+
+An example of a correct if statement is:
+
+int x = 0;
+if(x == 0)
+
+There are also one line if statements than can be used and it is as follows:
+
+(condition) ? True : False;
+
+An example of this is:
+
+((x + 5) > 10) ? True : False;
+
+An example of an if, if else, and else is as follows:
+
+if(condition) {
+	
+}
+else if(condition) {
+	
+}
+else {
+	
+}
+
+It is crucial you understand how these work as they are necessary to be a successful developer.
+
+There are a few different conditional operators you can use in these if statements.
+
+Equals: ==			- Resorts to true if the lhs is equal to the rhs
+And:	&&			- Resorts to true if both the lhs and the rhs are true. 	False && False -> False, 		True && True -> True, 	True && False -> False
+Or:		||			- Resorts to true if either side of the symbol is true.
+
+These are the 3 main operators you can use in an if statement. 
+
+In c++ there are 3 main loops you can use. 
+
+for, while, do... while
+
+An example of these are as follows:
+
+for(int i = 0; i < value; i++) {
+	
+}
+
+while(condition) {
+	
+}
+
+do {
+	
+} while(conditon);
+
+For loops are good if you know when they will end.
+While loops are good if you are unsure when it is going to end.
+
+You can use infinite loops as follows
+
+while(true) {
+	
+}
+
+while(1) {
+	
+}
+
+for(;;) {
+	
+}
+
+do {
+	
+} while(true);
+
+do {
+	
+} while(1);
